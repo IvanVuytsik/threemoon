@@ -1,0 +1,54 @@
+:root {
+    --col-1: #572651;
+    --col-2: #140383;
+    --col-3: #b9b58f;
+    --col-4: #a1cdf1;
+    --col-5: #940183;    
+}
+
+*,*::after,*::before {
+
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.dark-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--col-1),  var(--col-2));
+    opacity: 1;
+}
+
+.light-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, var(--col-3),  var(--col-4));
+    opacity: 0;
+}
+
+.dark-icon{
+    position: absolute;
+    color: var(--col-5);
+    top: 5rem;
+    z-index: 10;
+   
+}
+
+.light-icon{
+    position: absolute;
+    color: var(--col-5);
+    top: 5rem;
+    z-index: 10;
+    right: 0;
+}
+
+canvas {
+    position: relative;
+}
+
